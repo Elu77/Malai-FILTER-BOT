@@ -11,9 +11,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', '19553188'))
-API_HASH = environ.get('API_HASH', '52c7a1c621bc52258f55961d65028bb0')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '24070140'))
+API_HASH = environ.get('API_HASH', 'a08c1f9fbbd77b8cc6a3ddcdb65915f4')
+BOT_TOKEN = environ.get('BOT_TOKEN', "8130937815:AAE5GNPocgLvjGYfJNJM3na706K3sU71Jnw")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
@@ -21,7 +21,7 @@ PICS = (environ.get('PICS', 'https://envs.sh/foA.jpg')).split()
 
 
 # Admins & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1354643852 1247549682').split()] # For Multiple Id Use One Space Between Each.
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7343714414').split()] # For Multiple Id Use One Space Between Each.
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]  # For Multiple Id Use One Space Between Each.
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
